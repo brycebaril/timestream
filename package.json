@@ -1,0 +1,26 @@
+{
+  "name": "timestream",
+  "version": "0.0.0",
+  "description": "A suite of tools for working with objectMode streams of time-ordered data. (e.g. tsdb records)",
+  "main": "timestream.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "node test/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:brycebaril/timestream.git"
+  },
+  "keywords": [
+    "stream",
+    "tsdb",
+    "timeseries"
+  ],
+  "author": "Bryce B. Baril",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/brycebaril/timestream/issues"
+  }
+}
