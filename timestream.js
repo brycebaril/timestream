@@ -199,6 +199,57 @@ Timestream.prototype.filter = function (fn) {
 }
 
 /* AGGREGATES */
+Timestream.prototype.sum = function (slice) {
+  return Timestream(this.stream.pipe(aggs.sum(this.seqKey, slice)))
+}
+
+Timestream.prototype.mean = function (slice) {
+  return Timestream(this.stream.pipe(aggs.mean(this.seqKey, slice)))
+}
+
+Timestream.prototype.mode = function (slice) {
+  return Timestream(this.stream.pipe(aggs.mode(this.seqKey, slice)))
+}
+
+Timestream.prototype.median = function (slice) {
+  return Timestream(this.stream.pipe(aggs.median(this.seqKey, slice)))
+}
+
+Timestream.prototype.variance = function (slice) {
+  return Timestream(this.stream.pipe(aggs.variance(this.seqKey, slice)))
+}
+
+Timestream.prototype.stdev = function (slice) {
+  return Timestream(this.stream.pipe(aggs.stdev(this.seqKey, slice)))
+}
+
+Timestream.prototype.percentile = function (slice, percent) {
+  return Timestream(this.stream.pipe(aggs.percentile(this.seqKey, slice, percent)))
+}
+
+Timestream.prototype.min = function (slice) {
+  return Timestream(this.stream.pipe(aggs.min(this.seqKey, slice)))
+}
+
+Timestream.prototype.max = function (slice) {
+  return Timestream(this.stream.pipe(aggs.max(this.seqKey, slice)))
+}
+
+Timestream.prototype.count = function (slice) {
+  return Timestream(this.stream.pipe(aggs.count(this.seqKey, slice)))
+}
+
+Timestream.prototype.first = function (slice) {
+  return Timestream(this.stream.pipe(aggs.first(this.seqKey, slice)))
+}
+
+Timestream.prototype.last = function (slice) {
+  return Timestream(this.stream.pipe(aggs.last(this.seqKey, slice)))
+}
+
+Timestream.prototype.sample = function (slice) {
+  return Timestream(this.stream.pipe(aggs.sample(this.seqKey, slice)))
+}
 
 /* GENERATORS */
 
