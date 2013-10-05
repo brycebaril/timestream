@@ -3,6 +3,9 @@ timestream
 
 [![NPM](https://nodei.co/npm/timestream.png)](https://nodei.co/npm/timestream/)
 
+[![david-dm](https://david-dm.org/brycebaril/timestream.png)](https://david-dm.org/brycebaril/timestream/)
+[![david-dm](https://david-dm.org/brycebaril/timestream/dev-status.png)](https://david-dm.org/brycebaril/timestream#info=devDependencies/)
+
 `timestream` is a suite of tools for working with `objectMode` streams of time-ordered records, i.e. timeseries data.
 
 **NOTE: THIS IS A WORK IN PROGRESS**

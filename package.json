@@ -24,12 +24,12 @@
     "url": "https://github.com/brycebaril/timestream/issues"
   },
   "dependencies": {
-    "timestream-filters": "~0.2.1",
-    "timestream-ops": "~0.1.1",
-    "timestream-aggregates": "~0.1.2",
+    "timestream-filters": "~0.2.2",
+    "timestream-ops": "~0.1.2",
+    "timestream-aggregates": "~0.1.3",
     "stream-joins": "~0.1.2",
     "timestream-gen": "~0.1.0",
-    "terminus": "~1.0.0"
+    "terminus": "~1.0.2"
   },
   "devDependencies": {
     "stream-spigot": "~2.1.2",
