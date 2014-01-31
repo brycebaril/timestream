@@ -64,8 +64,8 @@ Timestream.prototype.where = function (filter, right) {
 
 /* OPS */
 
-Timestream.prototype.apply = function (fn) {
-  return Timestream(this.stream.pipe(ops.apply(this.seqKey, fn)))
+Timestream.prototype.each = function (fn) {
+  return Timestream(this.stream.pipe(ops.each(this.seqKey, fn)))
 }
 
 Timestream.prototype.ceil = function () {

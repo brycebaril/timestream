@@ -86,7 +86,7 @@ Generate a geometric sequence with a single numeric record at each timestamp.
 Options:
 
   * start (required): A millisecond timestamp for the first record
-  * until (required): A millsecond timestamp for the maximum possible timestamp in this series
+  * until (required): A millisecond timestamp for the maximum possible timestamp in this series
   * interval (required): A number of milliseconds to increment each record's timestamp by
   * key: A name for the value at each record. Default `gen`
   * initial: An initial value for the first record. Default 0
@@ -100,7 +100,7 @@ Generate a random series with a `Math.random()` value at each timestamp.
 Options:
 
   * start (required): A millisecond timestamp for the first record
-  * until (required): A millsecond timestamp for the maximum possible timestamp in this series
+  * until (required): A millisecond timestamp for the maximum possible timestamp in this series
   * interval (required): A number of milliseconds to increment each record's timestamp by
   * key: A name for the value at each record. Default `rand`
 
@@ -112,9 +112,9 @@ Generate a single record at a single point in time. Default record is {gen: 1}, 
 Joins
 ===
 
-Join operations combine two timestreams based on the timestamps. All operations are considered **left** side operations, that is when combining records, they will use the left values where matching records have keys that overlap.
+Join operations combine two timestreams based on the timestamps. To join records the millisecond timestamps must be identical. All join operations are considered **left** side operations, that is when combining records, they will use the left values where matching records have keys that overlap.
 
-**NOTE**: You'll frequently want to do an aggregation operation before joining to make sure the temestamps match.)
+**NOTE: You'll frequently/usually want to do an aggregation operation before joining to make sure the temestamps match.**
 
   * union
   * join
@@ -293,7 +293,7 @@ Operations
 
 This set of transform operations operate on each record, and thus will forward the same number of records downstream, unlike the filters or aggregates.
 
-* apply
+* each
 * ceil
 * floor
 * round
@@ -321,7 +321,7 @@ This set of transform operations operate on each record, and thus will forward t
 * slide
 * map
 
-`apply(fn)`
+`each(fn)`
 ---
 
 Apply `fn` to each value in each record. Walks through each record calling `fn` for each value, so `fn` should accept a value and return what you would like the new value to be.
