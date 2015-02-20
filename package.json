@@ -1,6 +1,6 @@
 {
   "name": "timestream",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A suite of tools for working with objectMode streams of time-ordered data. (e.g. tsdb records)",
   "main": "timestream.js",
   "directories": {
