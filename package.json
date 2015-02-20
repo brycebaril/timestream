@@ -26,13 +26,13 @@
   "dependencies": {
     "timestream-filters": "~0.2.3",
     "timestream-ops": "~0.2.0",
-    "timestream-aggregates": "~0.1.5",
-    "stream-joins": "~0.1.4",
+    "timestream-aggregates": "~0.1.7",
+    "stream-joins": "~0.1.5",
     "timestream-gen": "~0.1.1",
-    "terminus": "~1.0.9"
+    "terminus": "~1.0.11"
   },
   "devDependencies": {
-    "stream-spigot": "~3.0.3",
-    "tape": "~2.4.0"
+    "stream-spigot": "~3.0.5",
+    "tape": "~3.5.0"
   }
 }
