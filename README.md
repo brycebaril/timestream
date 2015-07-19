@@ -111,7 +111,7 @@ Joins
 
 Join operations combine two timestreams based on the timestamps. To join records the millisecond timestamps must be identical. All join operations are considered **left** side operations, that is when combining records, they will use the left values where matching records have keys that overlap.
 
-**NOTE: You'll frequently/usually want to do an aggregation operation before joining to make sure the temestamps match.**
+**NOTE: You'll frequently/usually want to do an aggregation operation before joining to make sure the timestamps match.**
 
   * union
   * join
